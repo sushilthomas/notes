@@ -1,0 +1,10 @@
+# create a new branch
+git checkout -b new_clean_branch
+
+# apply all changes
+git merge original_messy_branch
+
+# forget the commits but have the changes staged for commit
+git reset --soft main        
+
+git commit -m "Squashed changes from original_messy_branch"
